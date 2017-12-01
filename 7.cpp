@@ -6,7 +6,7 @@ int crc(char *ip,char *op,char *poly,int mode)
     strcpy(op,ip);
     if(mode)
     {
-        for(int i=0;i<strlen(poly);i++)
+        for(int i=1;i<strlen(poly);i++)
             strcat(op,"0");
     }
     for(int i=0;i<strlen(ip);i++)
